@@ -24,7 +24,7 @@ class TestCalliope(unittest.TestCase):
     def test_engine_should_be_serviced(self):
         today = datetime.today().date()
         last_service_date = datetime.today().date()
-        current_mileage = 30001
+        current_mileage = 30008
         last_service_mileage = 0
 
         car = CarFactory.create_calliope(today, last_service_date, current_mileage, last_service_mileage)
