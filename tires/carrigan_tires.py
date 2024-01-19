@@ -7,7 +7,7 @@ class CarriganTires(Tires):
         self.service_tires_when_tire_at = 0.9
 
     def needs_service(self) -> bool:
-        for item in self.tire_wear:
-            if item >= self.service_tires_when_tire_at:
+        for tire in self.tire_wear:
+            if tire >= self.service_tires_when_tire_at:
                 return True
         return False
